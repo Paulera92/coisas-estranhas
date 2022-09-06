@@ -11,7 +11,7 @@
   <body class="dark-theme" aria-label="O site está utilizando o tema light" role="body">
     <header aria-label="Cabeçalho da página.">
       <audio id="music" autoplay> 
-        <source src="assets/musics/Kate-Bush.mp3" aria-details="Audio do site" />
+        <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
       </audio>
       <div class="header-content">
         <img class="invert-element" src="assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
@@ -145,7 +145,7 @@
         document.body.classList.toggle('light-theme');
 
         const theme = document.body.classList[0];
-        const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'Kate-Bush.mp3'
+        const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg'
 
         const audio = document.getElementById('music');
         audio.src ='assets/musics/${music}';
